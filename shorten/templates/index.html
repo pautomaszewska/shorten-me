@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-<div>
-    <span>Enter URL you want to shorten</span>
-        <form   method="post" enctype="multipart/form-data">
+<div class="text-center">
+    <span>Enter URL you want to shorten:</span>
+        <form method="post" enctype="multipart/form-data" class="mt-2">
             {% csrf_token %}
-            {{ form }}
-        <input type="submit" value="Shorten">
+            {{ form.as_p }}
+        <input type="submit" value="Shorten" class="button btn">
         </form>
 </div>
 

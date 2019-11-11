@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div>Here is your link: </div>
-        <div><a href="{{ shortened.show_whole_link }}">{{ shortened.show_whole_link }}</a></div>
+    <div class="text-center">Here is your link: </div>
+        <div class="text-center">
+            <a href="{{ shortened.show_whole_link }}">{{ shortened.show_whole_link }}</a>
+        </div>
+        <div class="text-center mt-2">
+            <a href="{% url 'index' %}" class="button btn">Another one!</a>
+        </div>
 
 {% endblock %}

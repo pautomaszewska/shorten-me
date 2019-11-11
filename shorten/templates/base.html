@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
+    {% load static %}
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <meta charset="UTF-8">
     <title>Shorten me!</title>
 </head>
-<body>
-<header>Shorten me!</header>
+<body class="mx-3">
+    <header class="text-center my-3">Shorten me!</header>
+
         {% block content %}
 
         {% endblock %}
