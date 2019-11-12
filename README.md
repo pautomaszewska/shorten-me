@@ -1,7 +1,7 @@
 ## Shorten me
 
 ### Info
-URL shortener created as a recruitment task.
+URL shortener created as a recruitment task. Demo: https://url-shorten-me.herokuapp.com/
 
 ### Technologies
 * Python 3.6
